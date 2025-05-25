@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Giới thiệu sản phẩm</title>
+  <title>Trang giới thiệu sản phẩm Coocoon</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -32,7 +32,7 @@
       padding: 15px;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
+      margin-top: 30px;
     }
     input, textarea {
       width: 100%;
@@ -56,7 +56,33 @@
 </head>
 <body>
 
-  <h1>Trang giới thiệu sản phẩm</h1>
+  <h1>Sản phẩm nổi bật của Coocoon</h1>
+
+  <div id="productList">
+    <div class="product">
+      <h3>1. Son dưỡng môi đu đủ Coocoon</h3>
+      <p>100% thuần chay, không chứa chì, chiết xuất từ đu đủ và bơ cacao giúp dưỡng môi mềm mại, mịn màng.</p>
+      <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/0x465/https://cms-prod.s3-sgn09.fptcloud.com/00033132_son_duong_moi_du_du_coocoon_5g_7714_6185_large_8c4f071f73.png" alt="Son dưỡng môi Coocoon" />
+    </div>
+
+    <div class="product">
+      <h3>2. Tẩy tế bào chết cà phê Đắk Lắk</h3>
+      <p>Chiết xuất cà phê Đắk Lắk nguyên chất, giúp làm sạch tế bào chết, làm sáng da và mềm mịn tự nhiên.</p>
+      <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/0x465/https://cms-prod.s3-sgn09.fptcloud.com/00028899_tay_te_bao_chet_coocoon_ca_phe_150ml_1458_5f8f_large_4c2f2b6a45.png" alt="Tẩy tế bào chết cà phê Coocoon" />
+    </div>
+
+    <div class="product">
+      <h3>3. Sữa rửa mặt bí đao Coocoon</h3>
+      <p>Làm sạch dịu nhẹ, giảm dầu và ngừa mụn nhờ chiết xuất bí đao, rau má và tràm trà. Phù hợp cho da dầu, da mụn.</p>
+      <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/0x465/https://cms-prod.s3-sgn09.fptcloud.com/00029003_sua_rau_mat_bi_dao_coocoon_140ml_7129_3083_large_30ff0e68fa.png" alt="Sữa rửa mặt bí đao Coocoon" />
+    </div>
+
+    <div class="product">
+      <h3>4. Bộ chăm sóc da từ nghệ Hưng Yên</h3>
+      <p>Combo serum + mặt nạ từ tinh chất nghệ vàng Hưng Yên, giúp dưỡng sáng và làm đều màu da, giảm thâm nám.</p>
+      <img src="https://cdn.nhathuoclongchau.com.vn/unsafe/0x465/https://cms-prod.s3-sgn09.fptcloud.com/00031573_bo_cham_soc_da_nghe_coocoon_8166_1768_large_9ccf88a92a.png" alt="Bộ chăm sóc da nghệ Coocoon" />
+    </div>
+  </div>
 
   <form id="productForm">
     <h2>Thêm sản phẩm mới</h2>
@@ -65,10 +91,6 @@
     <input type="url" id="productImage" placeholder="URL hình ảnh" required />
     <button type="submit">Thêm sản phẩm</button>
   </form>
-
-  <div id="productList">
-    <!-- Danh sách sản phẩm sẽ hiển thị ở đây -->
-  </div>
 
   <script>
     const form = document.getElementById('productForm');
